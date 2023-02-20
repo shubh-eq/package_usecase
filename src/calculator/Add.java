@@ -1,17 +1,24 @@
 package calculator;
+import history.History;
 
 public class Add {
 
-    public static int add_two_number(int num1, int num2) {
-        return num1 + num2;
+    public static int addTwoNumber(int num1, int num2) {
+        int result = num1 + num2;
+        History.insertLatestCalc(num1+" + "+num2+" = "+result);
+        return result;
     }
 
-    public static float add_two_number(float num1, float num2) {
-        return num1 + num2;
+    public static float addTwoNumber(float num1, float num2) {
+        float result = num1 + num2;
+        History.insertLatestCalc(num1+" + "+num2+" = "+result);
+        return result;
     }
 
-    public static double add_two_number(double num1, double num2) {
-        return num1 + num2;
+    public static double addTwoNumber(double num1, double num2) {
+        double result = num1 + num2;
+        History.insertLatestCalc(num1+" + "+num2+" = "+result);
+        return result;
     }
 
 }
