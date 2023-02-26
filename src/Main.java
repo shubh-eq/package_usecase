@@ -44,5 +44,12 @@ public class Main {
         //Print last 5 calculations
         System.out.println("Printing Last 5 Calculations:");
         History.getLastFiveTransactions();
+
+        //Creating Student Class and Calculating Total marks
+        int []studentMarks = {20, 50, 40, 50};
+        student.Student shubh = new student.Student(studentMarks);
+
+        int totalMarks = shubh.addMarkStudents();
+        System.out.println("\nTotal Marks: "+totalMarks);
     }
 }
